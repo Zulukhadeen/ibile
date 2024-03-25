@@ -112,6 +112,59 @@ margin-top: var(--flow-space, 1rem);
     padding-block: 2rem;
 }
 
+/* COMPONENT CSS */
+.logo {
+    font-size: 2.5rem;
+    color: var(--clr-dark);
+
+}
+
+/* src- https://codepen.io/t_afif/pen/abKyJNJ */
+/* buttons */
+.btn-close,
+.btn-menu {
+  margin: 2rem 0 0 2rem;
+  cursor: pointer;
+}
+
+.btn-close {
+    position: absolute;
+    left: 2%;
+}
+.btn {
+    padding: 0.5rem;
+    box-shadow: 0 0 0 .1em inset var(--clr-secondary);
+    --lg: linear-gradient(var(--clr-secondary) 0 0) no-repeat;
+    background: 
+    var(--lg) calc(var(--_p,0%) - 100%) 0%,
+    var(--lg) calc(200% - var(--_p,0%)) 0%,
+    var(--lg) calc(var(--_p,0%) - 100%) 100%,
+    var(--lg) calc(200% - var(--_p,0%)) 100%; 
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+.btn:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    color: var(--clr-white);
+    cursor: pointer;
+  }
+.btn:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--clr-secondary);
+    color: var(--clr-white);
+}
+/* links */
+.link {
+    color: var(--clr-dark);
+}
+.link:hover,
+.link:active {
+    color: var(--clr-primary);
+}
+
+
 /* MAIN CSS - MOBILE VIEW */
 .header {
     background-image: url("./imgs/bg-2.jpg");

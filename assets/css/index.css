@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Jua&display=swap');
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: scroll;
+}
+
+ul,
+ol,
+body,
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture , hr{
+    padding: 0;
+    margin: 0;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, 
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+    border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before 
+    *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+/* UTILITY CSS */
+
+:root {
+    /* colors */
+    --clr-light: #d3d3d3;
+    --clr-dark: #140b05;
+    --clr-primary: #ebfa69;
+    --clr-secondary: #ff8c67;
+    --clr-white: #fff;
+  
+    /* fonts */
+    --ff-montserat: "Montserrat", sans-serif;
+    --ff-inter: "Inter", sans-serif;
+    --ff-jua: "Jua", sans-serif;
+    --gap: 1rem;
+}
+
+ 
+.text-light { color: var(--clr-light); }
+.text-secondary { color: var(--clr-secondary); }
+.text-primary { color: var(--clr-primary); }
+.bg-dark { background-color: var(--clr-dark); }
+.bg-primary { background-color: var(--clr-primary); }
+.bg-white { background-color: var(--clr-white); }
+
+.ff-jua { font-family: var(--ff-jua); }
+.ff-montserat { font-family: var(--ff-montserat); }
+.ff-inter { font-family: var(--ff-inter); }
+
+.container > * {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+.flow > *:where(:not(:first-child)) {
+margin-top: var(--flow-space, 1rem);
+}
+
+.mg-1 {
+    margin-block: 1rem;
+  }
+  
+.mg-2 {
+    margin-block: 2rem;
+}
+  
+.mg-4 {
+    margin-top: 4rem;
+}
+  
+.underline {
+    text-decoration: underline;
+}
+  
+.bold {
+    font-weight: bold;
+}
+ 
+.pd-2 {
+    padding-block: 2rem;
+}

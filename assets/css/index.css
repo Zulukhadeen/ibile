@@ -120,3 +120,46 @@ margin-top: var(--flow-space, 1rem);
 .pd-2 {
     padding-block: 2rem;
 }
+
+/* MAIN CSS - MOBILE VIEW */
+.header {
+    background-image: url("./imgs/bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+} 
+
+/* MAIN CSS - DESKTOP VIEW */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+    .btn-menu,
+    .btn-close {
+      display: none !important;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: static;
+        background-color: var(--clr-white);
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 8%;
+        height: 15vh;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+      }
+    
+      .menu .logo {
+        margin-top: 0;
+      }
+    
+      .nav {
+        flex-direction: row;
+        gap: 3rem;
+      }
+      
+}
+  

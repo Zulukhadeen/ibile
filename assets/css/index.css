@@ -6,11 +6,9 @@
 *::after {
     box-sizing: border-box;
 }
-
 html {
     overflow-x: scroll;
 }
-
 ul,
 ol,
 body,
@@ -26,12 +24,10 @@ picture , hr{
     padding: 0;
     margin: 0;
 }
-
 img, picture {
     max-width: 100%;
     display: block;
 }
-
 input, 
 button,
 textarea,
@@ -40,7 +36,6 @@ select {
     outline: none;
     border: none;
 }
-
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before 
@@ -51,7 +46,6 @@ select {
         scroll-behavior: auto !important;
     }
 }
-
 li, a {
     text-decoration: none;
     list-style-type: none;
@@ -72,7 +66,6 @@ li, a {
     --ff-jua: "Jua", sans-serif;
     --gap: 1rem;
 }
- 
 .text-light { color: var(--clr-light); }
 .text-secondary { color: var(--clr-secondary); }
 .text-primary { color: var(--clr-primary); }
@@ -118,7 +111,6 @@ margin-top: var(--flow-space, 1rem);
     color: var(--clr-dark);
 
 }
-
 /* src- https://codepen.io/t_afif/pen/abKyJNJ */
 /* buttons */
 .btn-close,
@@ -126,7 +118,6 @@ margin-top: var(--flow-space, 1rem);
   margin: 2rem 0 0 2rem;
   cursor: pointer;
 }
-
 .btn-close {
     position: absolute;
     left: 2%;
@@ -163,7 +154,6 @@ margin-top: var(--flow-space, 1rem);
 .link:active {
     color: var(--clr-primary);
 }
-
 
 /* MAIN CSS - MOBILE VIEW */
 .header {
@@ -228,15 +218,12 @@ gap: 3rem;
         height: 15vh;
         box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     }
-    
     .menu .logo {
         margin-top: 0;
     }
-    
     .nav {
         flex-direction: row;
         gap: 3rem;
-    }
-      
+    }  
 }
   

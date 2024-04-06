@@ -106,10 +106,31 @@ margin-top: var(--flow-space, 1rem);
 }
 
 /* COMPONENT CSS */
+
 .logo {
     font-size: 2.5rem;
     color: var(--clr-dark);
 
+}
+.container > * {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.flow > *:where(:not(:first-child)) {
+margin-top: var(--flow-space, 1rem);
+}
+.mg-1 {
+    margin-block: 1rem;
+  }
+  
+.mg-2 {
+    margin-block: 2rem;
 }
 /* src- https://codepen.io/t_afif/pen/abKyJNJ */
 /* buttons */
@@ -196,6 +217,32 @@ gap: 3rem;
 .nav {
     flex-direction: column;
     gap: 1.5rem;
+}
+
+/* Main Section */
+.main-title {
+    text-align: center;
+}
+
+.recipe-container {
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 4rem;
+    justify-content: center;
+}
+.recipe-img {
+    width: 80%;
+}
+
+/* Footer Section */
+.footer {
+    /* max-width: 80%;
+    margin:  0 auto; */
+    justify-content: center;
+    padding-block: 2rem ;
+    background-color: var(--clr-primary);
+    color: #fff;
+    gap: 1rem;
 }
 /* MAIN CSS - DESKTOP VIEW */
 @media (min-width: 768px) {

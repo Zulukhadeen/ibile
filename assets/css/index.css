@@ -83,6 +83,9 @@ li, a {
 .flex {
     display: flex;
 }
+.grid {
+    display: grid;
+}
 .flow > *:where(:not(:first-child)) {
 margin-top: var(--flow-space, 1rem);
 }
@@ -243,7 +246,40 @@ gap: 3rem;
     background-color: var(--clr-primary);
     color: #fff;
     gap: 1rem;
+    height: 30vh;
 }
+/* Auth Page */
+.auth-wrapper {
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+.tab-container {
+    padding: 1rem;
+}
+.tab-nav {
+    padding: 2rem;
+    gap: 2rem;
+}
+.content {
+    display: none;
+}
+.auth-form {
+    display: grid;
+    gap: 0.5rem;
+}
+.sign-up {
+    grid-template-columns: 1fr 1fr;
+}
+.sign-up-btn {
+    grid-column: span 2 / span 2;
+}
+.input {
+    height: 2.5rem;
+    padding-inline: 1rem;
+    border: 1px solid;
+}
+
 /* MAIN CSS - DESKTOP VIEW */
 @media (min-width: 768px) {
     .navbar {

@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +12,9 @@
 <body class="ff-montserat flow">
     <!--Header Section-->
     <header class="header container">
-        <i class="fa-solid fa-bars btn-menu"></i>
-        <nav class="menu bg-white">
-            <i class="fa-solid mg-2 fa-xmark btn-close"></i>
-            <a class="logo ff-jua " href="./index.html">
-                <span class="text-dark"> IBILE </span> <span class="text-secondary">FOOD</span>
-            </a>
-            <div class="flex navbar">
-                <ul class="flex nav text-dark">
-                    <li><a class="link" id="about" href="./about.html">Blog</a></li>
-                    <li><a class="link" id="program" href="#">About</a></li>
-                    <li><a class="link" id="join" href="#">Contact Us</a></li>
-                </ul>
-                <a href="./auth.html"><button class="btn" type="button"> Sign up / Login  </button> </a>
-            </div>
-        </nav>
+        <?php 
+            include('./assets/components/navbar.php')
+        ?>
         <p class="text-dark bg-light">
             Your way to African foods   
         </p>
@@ -37,13 +28,10 @@
                 <h2 class="bold">What African Dish would you like to cook ?</h2>
                 <div>
                         <input class="input" />            
-                        <button onclick="window.location.href='./recipes.html'"> Search </button>
+                        <button class="btn" onclick="window.location.href='./recipes.html'"> Search </button>
                 </div>
 
             </div>
-            <p>
-                Popular Searches
-            </p>
         </div>
     </header>
 
@@ -90,29 +78,12 @@
         </div>
         <button id="addmore"> More Recipes </button>
     </main>
-    <!-- Footer Section -->
-    <footer class="flex footer ">
-        <!-- <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"> -->
-            <div class="">
-                <a class="logo ff-jua " href="./index.html">
-                    <span class="text-dark"> IBILE </span> <span class="text-secondary">FOOD</span>
-                </a>
-                <p> Looking for a place to get African recipe. <br /> IBILIE is your stop </p>               
-            </div>
-            <div>
-                <li> <a href=""> South African Dishes</a> </li>
-                <li> <a href=""> West African Dishes</a> </li>
-                <li> <a href=""> East African Dishes</a> </li>
-                <li> <a href=""> African Main Dishes</a> </li>
-
-            </div>
-            <div>
-                <li> <a href=""> About Us</a> </li>
-                <li> <a href=""> Contact Us</a> </li>
-            </div>
-    </footer>
+    <?php 
+        include('./assets/components/footer.php');
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/79a71d8460.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"> </script>
     <script src="./server/index/index.js"></script>
 </body>
 </html>

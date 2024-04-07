@@ -39,7 +39,5 @@
     <?php 
         include('./assets/components/footer.php');
     ?>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/79a71d8460.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -19,3 +19,6 @@
             <li> <a href=""> Contact Us</a> </li>
         </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/79a71d8460.js" crossorigin="anonymous"></script>
+<script src="./assets/js/main.js"> </script>

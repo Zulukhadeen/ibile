@@ -69,6 +69,7 @@ li, a {
 .text-light { color: var(--clr-light); }
 .text-secondary { color: var(--clr-secondary); }
 .text-primary { color: var(--clr-primary); }
+.text-white { color: var(--clr-white);}
 .bg-dark { background-color: var(--clr-dark); }
 .bg-primary { background-color: var(--clr-primary); }
 .bg-white { background-color: var(--clr-white); }
@@ -181,7 +182,8 @@ margin-top: var(--flow-space, 1rem);
 
 /* MAIN CSS - MOBILE VIEW */
 .header {
-    background-image: url("./imgs/bg-2.jpg");
+    height: 64vh;
+    background-image: url("../imgs/africa-cover.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,6 +282,80 @@ gap: 3rem;
     border: 1px solid;
 }
 
+/* Recipe Detail Section*/ 
+.recipe-detail {
+    justify-items: center;
+}
+
+.recipe-detail-image {
+    position: relative;
+}
+.navicon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.navicon.left {
+    left: 2rem;
+}
+
+.navicon.right {
+ right: 2rem;
+}
+
+.image-slider {
+    height: 30vh;
+}
+.image-slider img {
+    display: none;
+    height: 100%;
+}
+
+.image-slider img.active {
+    display: inline-block;
+}
+
+.recipe-detail-info {
+    gap: 0.6rem;
+}
+.recipe-detail-info h2 {
+    font-size: 40px;
+}
+.recipe-cat {
+    font-size: 13px;
+    border: 1px solid var(--clr-primary);
+    padding: 2.5px 5px;
+    width: fit-content;
+    height: fit-content;
+}
+.recipe-time {
+    font-size: 14px;
+    gap: 2rem;
+}
+.recipe-time .time {
+    font-weight: 500;
+    font-family: var(--ff-jua);
+}
+.recipe-nutrition div {
+    gap: 1rem;
+    
+}
+.recipe-nutrition div .grid {
+    background-color: #ebfa69;
+    justify-items: center;
+    padding: 5px;
+    color: #140b05;
+}
+
+.recipe-nutrition div .grid .name {
+    background-color: #ff8c67;
+    color: #fff;
+    padding: 5px;
+}
 /* MAIN CSS - DESKTOP VIEW */
 @media (min-width: 768px) {
     .navbar {
@@ -307,6 +383,13 @@ gap: 3rem;
     .nav {
         flex-direction: row;
         gap: 3rem;
-    }  
+    } 
+    /* Recipe Detail Section */
+    .recipe-detail {
+        grid-template-areas:
+                            "recipe-detail-image  recipe-detail-info"
+                            "recipe-detail-image  recipe-nutrition"
+                            "recipe-ingridient recipe-instuctions";
+    } 
 }
   

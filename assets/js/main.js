@@ -29,4 +29,21 @@ $(document).ready(function() {
         $('.content').hide()
         $('.content').eq(index).show()
     })
+    $('.navicon.left').click(function(event) {
+        var currentImage =  $('.image-slider img.active');
+        var prevImage = currentImage.prev();
+        if (prevImage.length) {
+            currentImage.removeClass('active').css('z-index', -10);
+            prevImage.addClass('active').css('z-index',10)
+        }
+    })
+
+    $('.navicon.right').click(function(event) {
+        var currentImage =  $('.image-slider img.active');
+        var nextImage = currentImage.next();
+        if (nextImage.length) {
+            currentImage.removeClass('active').css('z-index', -10);
+            nextImage.addClass('active').css('z-index',10)
+        }
+    })
 })

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Ibile </title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Contact Ibile Team </title>
 </head>
 <body>
     <!-- Header section--> 

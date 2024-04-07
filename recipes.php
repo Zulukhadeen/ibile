@@ -1,86 +1,85 @@
-<?php 
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Home Page</title>
+    <title>Ibile - Recipes </title>
 </head>
 <body class="ff-montserat flow">
-    <!--Header Section-->
-    <header class="header container flow">
+    <!-- Header section--> 
+    <header class="container">
         <?php 
             include('./assets/components/navbar.php')
         ?>
-        <p class="text-dark bg-light">
-            Your way to African foods   
-        </p>
-        <h1 class="mg-2">
-            <span class="text-white header-span">
-                A place to get all African dishes <br /> from Morocco, South African, <br /> Ghana and many more
-            </span> 
-        </h1>       
-        <div class="mg-2">
-            <div>
-                <h2 class="bold text-white">What African Dish would you like to cook ?</h2>
-                <div>
-                        <input class="input" />            
-                        <button class="btn text-white" onclick="window.location.href='./recipes.php'"> Search </button>
-                </div>
-
-            </div>
-        </div>
     </header>
+      <!-- Main Section -->
 
-    <!-- Main Section -->
-    <main class="container flow">
-        <h1 class="main-title"> Popular Recipes </h1>
-        <div class="grid recipe-container">
+      <main class=" container flow">
+        <div class="grid recipe-search mg-2">
+            <div>
+                <div class="search-container">
+                        <input class="search-input" placeholder="Search for your recipes" />            
+                        <button onclick="window.location.href='./recipes.php'"> Search </button>
+                        <select name="location" id="location">
+                            <option value="east-africa">East Africa </option>
+                            <option value="south-africa">South Africa</option>
+                            <option value="west-africa">West Africa</option>
+                            <option value="north-africa">North Africa</option>
+                        </select>
+                </div>
+                <div class="flex food-category">
+                    <span> Meat & Seafood</span>
+                    <span> Soup </span>
+                    <span> Morsel </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid recipe-container mg-2">
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
             </div>
         </div>
+
     </main>
+
+
     <?php 
         include('./assets/components/footer.php');
     ?>
-
-    <script src="./server/index/index.js"></script>
 </body>
 </html>

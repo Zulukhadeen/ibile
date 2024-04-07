@@ -6,9 +6,9 @@
     </a>
     <div class="flex navbar">
         <ul class="flex nav text-dark">
-            <li><a class="link" id="about" href="./about.html">Blog</a></li>
-            <li><a class="link" id="program" href="#">About</a></li>
-            <li><a class="link" id="join" href="#">Contact Us</a></li>
+            <!-- <li><a class="link" id="about" href="./">Blog</a></li> -->
+            <li><a class="link" id="program" href="about.php">About</a></li>
+            <li><a class="link" id="join" href="contact-us.php">Contact Us</a></li>
         </ul>
         <?php 
             if (isset($_SESSION['loggedIn']))  {

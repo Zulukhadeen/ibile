@@ -6,6 +6,12 @@
     <title>About Ibile </title>
 </head>
 <body>
+        <!-- Header section--> 
+    <header class="container">
+        <?php 
+            include('./assets/components/navbar.php')
+        ?>
+    </header>
     <main>
         <section>
             <p> OUR GOALS</p>

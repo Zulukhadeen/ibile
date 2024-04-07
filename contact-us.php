@@ -6,6 +6,12 @@
     <title>About Ibile </title>
 </head>
 <body>
+    <!-- Header section--> 
+    <header class="container">
+        <?php 
+            include('./assets/components/navbar.php')
+        ?>
+    </header>
     <main>
         <h2> Contact the Team </h2>
         <p> Got any questions about the recipes on our platform ? We're here to help </p>

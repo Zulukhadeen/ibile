@@ -43,37 +43,37 @@
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div>
             <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
+                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div>
         </div>
         <button id="addmore"> More Recipes </button>

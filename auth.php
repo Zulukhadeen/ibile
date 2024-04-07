@@ -43,36 +43,69 @@
                     <form class="auth-form sign-up">
                         <div class="grid">
                             <label> First Name</label>
-                            <input type="text" required placeholder="firstname" class="input"/>    
+                            <input
+                                id="firstname"
+                                name="firstnane"
+                                type="text"
+                                required
+                                placeholder="firstname"
+                                class="input"/>    
                         </div>
                         <div class="grid">
                             <label> Last Name</label>
-                            <input placeholder="lastname" required class="input"/>    
+                            <input
+                                id="lastname"
+                                name="lastname"
+                                placeholder="lastname"
+                                required
+                                class="input"/>    
                         </div>
                         <div class="grid">
                             <label> Email</label>
-                            <input placeholder="Email" type="email" class="input" />
+                            <input
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                type="email"
+                                class="input" />
                         </div>
                         <fieldset>
                             <legend> Select a User Type</legend>
                             <div> 
-                                <input type="radio" name="userType" value="foodie" checked/>
+                                <input
+                                    class="userType"
+                                    type="radio"
+                                    name="userType"
+                                    value="foodie" checked/>
                                 <label> Foodie </label>
                             </div>
                             <div>
-                                <input type="radio" name="userType" value="cook" />
+                                <input
+                                    class="userType"
+                                    type="radio"
+                                    name="userType"
+                                    value="cook" />
                                 <label> Cook </label>
                             </div>
                         </fieldset>
                         <div class="grid">
                             <label> Password </label>
-                        <input placeholder="pasword" type="password" class="input" />
+                            <input
+                                name="password"
+                                id="password"
+                                placeholder="Password"
+                                type="password"
+                                class="input"
+                            />
                         </div>
                         <div class="grid">
                             <label> Confirm Password </label>
-                            <input placeholder="Confirm password" type="password" class="input" />
+                            <input
+                                id="confirm_password"
+                                name="confirm_password"
+                                placeholder="Confirm password" type="password" class="input" />
                         </div>
-                        <button type="button" id="sign-up-btn" class="btn mg-2 sign-up-btn"> Sign up </button>
+                        <button type="button" id="signup" class="btn mg-2 sign-up-btn"> Sign up </button>
                     </form>
                 </div>
             </div>

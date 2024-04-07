@@ -17,6 +17,9 @@
             if(password_verify($password, $hashed_password)) {
                 $_SESSION['loggedIn'] = true;
                 $_SESSION['email'] = $email;
+                $res = $connection->query(query: "SELECT `user-type` from `users` WHERE email='$email'");
+                $user_type = $res->fetch_assoc()['user-type'];
+                $_SESSION['userType'] = $user_type;
                 exit('success'); 
             } else {
                 exit('failed to veriy password');

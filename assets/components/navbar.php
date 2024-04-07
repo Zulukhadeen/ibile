@@ -10,13 +10,21 @@
             <li><a class="link" id="program" href="about.php">About</a></li>
             <li><a class="link" id="join" href="contact-us.php">Contact Us</a></li>
         </ul>
+        <div class="flex gap">
         <?php 
+          
+            if ($_SESSION['userType'] == 'cook' ) {
+                echo '<button class="btn flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
+            }; 
             if (isset($_SESSION['loggedIn']))  {
                 echo ' <a href="/server/auth/logout.php"> <button class="btn" type="button"> Log Out <button> </a> ';
             } else {
                 echo ' <a href="/auth.php"><button class="btn" type="button"> Sign up / Login  </button> </a>' ;
-
-            }
+            };
         ?>
+         </div>
     </div>
 </nav>
+<div class="modalBox">
+            
+</div>

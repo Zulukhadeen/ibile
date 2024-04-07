@@ -126,6 +126,9 @@ margin-top: var(--flow-space, 1rem);
 .grid {
     display: grid;
 }
+.gap {
+    gap: 1rem
+}
 .flow > *:where(:not(:first-child)) {
 margin-top: var(--flow-space, 1rem);
 }
@@ -146,6 +149,10 @@ margin-top: var(--flow-space, 1rem);
 .btn-close {
     position: absolute;
     left: 2%;
+}
+.btn-icon {
+    width: 24px;
+    height: 24px;
 }
 .btn {
     padding: 0.5rem;

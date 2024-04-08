@@ -386,6 +386,21 @@ gap: 3rem;
     padding: 1rem 2rem;
     background-color: #ebfa69;
 }
+/* Add Recipe Modal */
+.add-recipe-form {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+.add-recipe-form .description {
+    grid-column: span 2 / span 2;
+}
+.add-recipe-form .name {
+    grid-column: span 2 / span 2;
+}
+.add-recipe-form .nutrients {
+    grid-column: span 2 / span 2; 
+}
 /* MAIN CSS - DESKTOP VIEW */
 @media (min-width: 768px) {
     .navbar {

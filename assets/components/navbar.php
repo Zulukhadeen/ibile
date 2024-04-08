@@ -14,7 +14,7 @@
         <?php 
           
             if ($_SESSION['userType'] == 'cook' ) {
-                echo '<button class="btn flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
+                echo '<button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
             }; 
             if (isset($_SESSION['loggedIn']))  {
                 echo ' <a href="/server/auth/logout.php"> <button class="btn" type="button"> Log Out <button> </a> ';
@@ -26,5 +26,55 @@
     </div>
 </nav>
 <div class="modalBox">
+        <form class="add-recipe-form">
+            <div class="name">
+                <label> Food Name</label>
+                <input id="name" placeholder="Food Name" required class="input" />
+            </div>
+            <div class="decription">
+                <label> Description </label>
+                <textarea id="description" placeholder="Some Description about the food"> </textarea>
+            </div>
+            <select name="category" id="location">
+                <option value="soups">Soups </option>
+                <option value="morsel">Morsels </option>
+                <option value="grain">Grains</option>
+                <option value="meats">Meat</option>
+            </select>
+            <select name="location" id="location">
+                <option value="east">East Africa </option>
+                <option value="south">South Africa</option>
+                <option value="west">West Africa</option>
+                <option value="north">North Africa</option>
+            </select>
+            <div class="flex nutritents">
+                <div>
+                    <label> Vitamins</label>
+                    <input type="number" class="nutrients" max="1000" />
+                </div>
+                <div>
+                    <label> Proteins </label>
+                    <input type="number" class="nutrients" max="1000" />
+                </div>
+                <div>
+                    <label> Water </label>
+                    <input type="number" class="nutrients" max="1000" />
+                </div>
+                <div>
+                    <label> Fats </label>
+                    <input type="number" class="nutrients" max="1000" />
+                </div>
+            </div>
+            <div>
+                <label for="ingridients"> Ingridients </label>
+                <textarea id="ingridients"> </textarea> 
+            </div>
             
+            <div>
+            
+            </div>
+            <label for="instructions"> Instructions </label>
+            <textarea id="instructions"> </textarea>
+            <button type="button" id="add-recipe" class="btn mg-2"> Submit </button>
+        </form>
 </div>

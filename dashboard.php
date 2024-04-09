@@ -22,7 +22,7 @@
         ?>
     </header>
     <main class="container">
-        I ame logged in
+        I am logged in
         <?php 
          echo($_SESSION['userType'])
         ?>

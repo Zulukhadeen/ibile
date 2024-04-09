@@ -2,7 +2,7 @@
 <nav class="menu bg-white">
     <i class="fa-solid mg-2 fa-xmark btn-close"></i>
     <a class="logo ff-jua " href="/">
-        <span class="text-dark"> African Cuisine </span> 
+        <span class="text-dark"> The African Cuisine </span> 
         <span class="text-secondary">(IBILE)</span>
     </a>
     <div class="flex navbar">

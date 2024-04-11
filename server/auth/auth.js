@@ -25,7 +25,6 @@ $(document).ready(function() {
             })
         }
     })
-
     $("#signup").on('click', function() {
         var firstname = $("#firstname").val();
         var lastname = $("#lastname").val();

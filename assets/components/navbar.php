@@ -25,7 +25,7 @@
          </div>
     </div>
 </nav>
-<div class="modalBox">
+<!-- <div class="modalBox">
         <form class="add-recipe-form">
             <div class="name">
                 <label> Food Name</label>
@@ -77,4 +77,4 @@
             <textarea id="instructions"> </textarea>
             <button type="button" id="add-recipe" class="btn mg-2"> Submit </button>
         </form>
-</div>
+</div> -->

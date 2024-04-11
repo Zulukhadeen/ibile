@@ -38,43 +38,13 @@
     <!-- Main Section -->
     <main class="container flow">
         <h1 class="main-title"> Popular Recipes </h1>
-        <div class="grid recipe-container">
-            <div class="recipe" >
+        <div id="recipe-container" class="grid recipe-container">
+            <!-- <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
                 <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
-            </div>
+            </div> -->
         </div>
     </main>
     <?php 
@@ -82,5 +52,8 @@
     ?>
 
     <script src="./server/index/index.js"></script>
+    <script src=""> </script>
 </body>
+
+<script src="./server/recipes/getAllRecipes.js"></script>
 </html>

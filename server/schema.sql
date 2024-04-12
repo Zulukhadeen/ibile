@@ -19,13 +19,13 @@ CREATE TABLE IF NOT EXISTS `recipes` (
     `nutrients` JSON,
     `image` TEXT
 );
-
+ALTER TABLE `recipes`  ADD CONSTRAINT `recipes_user__fk` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 INSERT INTO `users` (`firstname`, `lastname`, `email`, `user-type`, `password`) VALUES 
 ('testuser', 'testuser', 'test@gmail.com', 'foodie', 'password');
  
-ALTER TABLE `recipes`  ADD CONSTRAINT `recipes_user__fk` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
-ALTER TABLE `recipes` MODIFY COLUMN `location` ENUM ('east', 'west', 'south', 'north') NOT NULL;
+
+
 
 -- ALTER TABLE `recipes` CHANGE COLUMN `categories` `category`  ENUM('soups', 'morsel', 'meats', 'grain') NOT NULL;
 

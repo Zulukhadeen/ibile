@@ -56,15 +56,14 @@ function searchRecipeOnPage () {
     }
 }
 
-function searchRecipe () {
-    $("#live-search-button").click(function ( ) {
-        var searchInputValue = $("#live-search").val();
-        if (searchInputValue !== "") {
+function search(input) {
+        console.log(input)
+        if (input !== "") {
             $.ajax({
                 url: "/server/recipes/searchRecipe.php",
                 method: "POST",
                 data: {
-                    input: searchInputValue
+                    input: input
                 },
                 success: function (response) {
                     console.log(response);
@@ -83,7 +82,19 @@ function searchRecipe () {
                 }
             })
         }
+}
+
+function searchRecipe () {
+    var input 
+    $(".search-input").on('change', function () {
+        input = $(this).val()
     })
+    $("#select-location").on('change', function () {
+        search($(this).val());
+    })
+    
+    $("#live-search-button").click(() => search(input))
+
 }
 
 function homeSearch() {

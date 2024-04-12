@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +25,17 @@
                         <input class="search-input" placeholder="Search for your recipes" id="live-search"/>            
                         <button class="btn" id="live-search-button"> Search </button>
                         <select id="select-location" name="location" id="location">
-                            <option value="east-africa">East Africa </option>
-                            <option value="south-africa">South Africa</option>
-                            <option value="west-africa">West Africa</option>
-                            <option value="north-africa">North Africa</option>
+                            <option value="east">East Africa </option>
+                            <option value="southa">South Africa</option>
+                            <option value="west">West Africa</option>
+                            <option value="north">North Africa</option>
                         </select>
                 </div>
                 <div class="flex food-category">
-                    <span> Meat & Seafood</span>
-                    <span> Soup </span>
-                    <span> Morsel </span>
+                    <button class="category" data-id="meats"> Meat & Seafood</button>
+                    <button class="category" data-id="soups"> Soup </button>
+                    <button class="category" data-id="morsel"> Morsel </button>
+                    <button class="category" data-id="grain"> Morsel </button>
                 </div>
             </div>
 

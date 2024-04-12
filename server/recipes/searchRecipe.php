@@ -5,7 +5,7 @@
     if(isset($_POST['input'])) {
         $input = $_POST['input'];
      
-        $res = $connection->query(query: "SELECT * FROM recipes WHERE name LIKE '${input}%' ");
+        $res = $connection->query(query: "SELECT * FROM recipes WHERE name LIKE '${input}%' OR location like '${input}%' OR `category` like '${input}%' ");
 
         $result_array = [];
         if ($res->num_rows > 0 ) {
@@ -16,7 +16,7 @@
             header('Content-type: application/json');
             echo json_encode($result_array);
         } else {
-            echo $return = " failed";
+            echo $return = "No record";
         }
          
     

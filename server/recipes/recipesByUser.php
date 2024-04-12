@@ -4,7 +4,7 @@
 
     $id = isset($_SESSION['id']) && $_SESSION['id'];
     
-    $res = $connection->query(query: "SELECT recipe_id, name, description, image, location, category, ingredients, instructions from recipes INNER JOIN users u on recipes.id = u.id WHERE u.id='2' ");
+    $res = $connection->query(query: "SELECT recipe_id, name, description, image, location, category, ingredients, instructions from recipes INNER JOIN users u on recipes.id = u.id WHERE u.id='$id' ");
     $result_array = [];  
     if ($res->num_rows > 0 ) {
         while($row=$res->fetch_assoc()) {
@@ -14,6 +14,6 @@
         header('Content-type: application/json');
         echo json_encode($result_array);
     } else {
-        echo $return = "<h1> No Record Found </h1>";
+        echo json_encode(array('mesage' => "No Record Found"));
     }
 ?>

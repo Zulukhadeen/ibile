@@ -12,7 +12,7 @@
         header('Content-type: application/json');
         echo json_encode($result_array);
     } else {
-        echo $return = "<h1> No Record Found </h1>";
+        echo json_encode(array('mesage' =>  "<h1> No Record Found </h1>"));
     }
      
 ?>

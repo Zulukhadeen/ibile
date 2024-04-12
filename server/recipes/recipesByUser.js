@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    getRecipes();
+    getRecipesByUser();
 })
 
-function getRecipes() {
+function getRecipesByUser() {
     $.ajax({
         type: "GET",
-        url: "/server/recipes/getAllRecipes.php",
+        url: "/server/recipes/recipesByUser.php",
         success: function (response) {
             $.each(response, function(key, value){
                 $('#recipe-container').append(`
@@ -21,4 +21,3 @@ function getRecipes() {
         }
     })
 }
-

@@ -9,13 +9,20 @@
             <!-- <li><a class="link" id="about" href="./">Blog</a></li> -->
             <li><a class="link" id="program" href="about.php">About</a></li>
             <li><a class="link" id="join" href="contact-us.php">Contact Us</a></li>
+            <?php 
+            if (isset($_SESSION['loggedIn']))  {
+                echo '<li><a class="link" id="join" href="dashboard.php">Dashboard</a></li>';
+            }
+            ?>
         </ul>
         <div class="flex gap">
         <?php 
-          
-            if ($_SESSION['userType'] == 'cook' ) {
-                echo '<button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
-            }; 
+            if (isset($_SESSION['userType'])) {
+                if ($_SESSION['userType'] == 'cook' || $_SESSION['userType'] == 'admin') {
+                    echo '<button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
+                }; 
+            }
+         
             if (isset($_SESSION['loggedIn']))  {
                 echo ' <a href="/server/auth/logout.php"> <button class="btn" type="button"> Log Out <button> </a> ';
             } else {

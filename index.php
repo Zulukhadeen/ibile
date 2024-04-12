@@ -27,7 +27,7 @@
             <div>
                 <h2 class="bold text-white">What African Dish would you like to cook ?</h2>
                 <div>
-                        <input class="input" />            
+                        <input class="input" id="live-search"/>            
                         <button class="btn text-white" onclick="window.location.href='./recipes.php'"> Search </button>
                 </div>
 
@@ -51,9 +51,7 @@
         include('./assets/components/footer.php');
     ?>
 
-    <script src="./server/index/index.js"></script>
-    <script src=""> </script>
-</body>
-
 <script src="./server/recipes/getAllRecipes.js"></script>
+<script src="./server/recipes/searchRecipe.js"></script>
+</body>
 </html>

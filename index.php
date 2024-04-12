@@ -27,8 +27,8 @@
             <div>
                 <h2 class="bold text-white">What African Dish would you like to cook ?</h2>
                 <div>
-                        <input class="input" id="live-search"/>            
-                        <button class="btn text-white" onclick="window.location.href='./recipes.php'"> Search </button>
+                        <input class="input" id="home-search"/>            
+                        <button class="btn text-white" id="home-search-button"> Search </button>
                 </div>
 
             </div>

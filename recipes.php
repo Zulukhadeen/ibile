@@ -19,9 +19,9 @@
         <div class="grid recipe-search mg-2">
             <div>
                 <div class="search-container">
-                        <input class="search-input" placeholder="Search for your recipes" />            
-                        <button onclick="window.location.href='./recipes.php'"> Search </button>
-                        <select name="location" id="location">
+                        <input class="search-input" placeholder="Search for your recipes" id="live-search"/>            
+                        <button class="btn" id="live-search-button"> Search </button>
+                        <select id="select-location" name="location" id="location">
                             <option value="east-africa">East Africa </option>
                             <option value="south-africa">South Africa</option>
                             <option value="west-africa">West Africa</option>
@@ -36,43 +36,14 @@
             </div>
 
         </div>
-        <div class="grid recipe-container mg-2">
-            <div class="recipe" >
+        <div class="grid recipe-container mg-2" id="recipe-container">
+            <!-- <div class="recipe" >
                 <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
                 <span class="recipe-cat"> South African Dish </span>
                 <h3 class="recipe-name"> Bobotie </h3>
                 <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
-            </div>
-            <div class="recipe" >
-                <img src="./assets/imgs/bg-2.jpg" class="recipe-img"/>
-                <span class="recipe-cat"> South African Dish </span>
-                <h3 class="recipe-name"> Bobotie </h3>
-                <button class="btn" type="button" onclick="window.location.href='./recipe-detail.html'"> View </button>
-            </div>
+            </div> -->
+
         </div>
 
     </main>
@@ -81,5 +52,6 @@
     <?php 
         include('./assets/components/footer.php');
     ?>
+    <script src="./server/recipes/searchRecipe.js"> </script>
 </body>
 </html>

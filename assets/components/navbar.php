@@ -2,7 +2,8 @@
 <nav class="menu bg-white">
     <i class="fa-solid mg-2 fa-xmark btn-close"></i>
     <a class="logo ff-jua " href="/">
-        <span class="text-dark"> IBILE </span> <span class="text-secondary">FOOD</span>
+        <span class="text-dark"> African Cuisine </span> 
+        <span class="text-secondary">(IBILE)</span>
     </a>
     <div class="flex navbar">
         <ul class="flex nav text-dark">
@@ -47,6 +48,8 @@
                 <option value="morsel">Morsels </option>
                 <option value="grain">Grains</option>
                 <option value="meats">Meat</option>
+                <option value="beverages">Beverages</option>
+                <option value="snacks">Snacks</option>
             </select>
             <select name="location" id="location">
                 <option value="east">East Africa </option>

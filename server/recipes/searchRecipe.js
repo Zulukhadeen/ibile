@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    homeSearch()
     searchRecipeOnPage()
     searchRecipe()
 })
@@ -92,16 +91,8 @@ function searchRecipe () {
     $("#select-location").on('change', function () {
         search($(this).val());
     })
-    
+
     $("#live-search-button").click(() => search(input))
 
 }
 
-function homeSearch() {
-    $("#home-search-button").click(function ( ) {
-        var homeInputValue = $("#home-search").val();
-        if (homeInputValue !== "") {
-            window.location.href= `/recipes.php?search_q=${homeInputValue}`
-        }
-    })
-}

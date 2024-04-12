@@ -52,6 +52,7 @@
     ?>
 
 <script src="./server/recipes/getAllRecipes.js"></script>
-<script src="./server/recipes/searchRecipe.js"></script>
+<script src="./server/recipes/searchHome.js"></script>
+
 </body>
 </html>

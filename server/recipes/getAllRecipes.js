@@ -7,7 +7,8 @@ function getRecipes() {
         type: "GET",
         url: "/server/recipes/getAllRecipes.php",
         success: function (response) {
-            $.each(response, function(key, value){
+            const popularArr = response.slice(0,4)
+            $.each(popularArr, function(key, value){
                 $('#recipe-container').append(`
                 <div class="recipe" > 
                     <img src="${value['image'] ? value['image'] : "./assets/imgs/no-image.png"}" class="recipe-img"/>

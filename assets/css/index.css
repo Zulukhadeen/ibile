@@ -244,6 +244,7 @@ gap: 3rem;
 }
 .recipe-img {
     width: 80%;
+    height: 40vh;
 }
 
 /* Footer Section */
@@ -296,6 +297,8 @@ gap: 3rem;
 
 .recipe-detail-image {
     position: relative;
+    width: 60%;
+    object-fit: contain;
 }
 .navicon {
     width: 32px;

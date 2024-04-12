@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,24 +20,24 @@
     <!-- Main Section -->
     <main class="grid recipe-detail flow">
             <!-- Recipe Info Section -->
-            <section class="grid recipe-detail-info">
-                    <h2> Chicken Cury </h2>
+            <section id="recipe-info" class="grid recipe-detail-info">
+                    <!-- <h2> Chicken Cury </h2>
                     <span class="recipe-cat"> South African Dish </span>
                     <div class="flex recipe-time">
                         <span> Total </span> <span class="time"> 30mins </span>
-                    </div>
+                    </div> -->
             </section>
             <secion class="recipe-detail-image"> 
-                <div class="image-slider">
-                    <img src="./assets/imgs/bg-2.jpg" class="active" />
+                <!-- <div class="image-slider"> -->
+                    <!-- <img src="./assets/imgs/bg-2.jpg" class="active" /> -->
                     <img src="./assets/imgs/healthy-food.png" />
-                    <img src="./assets/imgs/bg-2.jpg" />
+                    <!-- <img src="./assets/imgs/bg-2.jpg" /> -->
 
-                </div>
+                <!-- </div> -->
                 
-                <button class="navicon left"> <img src="./assets/imgs/left-icon.png" /> </button>
+                <!-- <button class="navicon left"> <img src="./assets/imgs/left-icon.png" /> </button>
                 <button class="navicon right"> <img src="./assets/imgs/right-icon.png" class="righticon-img"/> </button>
-                
+                 -->
             </secion>
             <!-- Nutrition Section -->
             <section class="recipe-nutrition flow">
@@ -82,6 +85,9 @@
         <?php 
         include('./assets/components/footer.php');
         ?>
+
+
+<script src="./server/recipes/getRecipeDetail.js"></script>
 
 </body>
 </html>

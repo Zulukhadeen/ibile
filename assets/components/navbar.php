@@ -1,7 +1,7 @@
 <i class="fa-solid fa-bars btn-menu"></i>
 <nav class="menu bg-white">
     <i class="fa-solid mg-2 fa-xmark btn-close"></i>
-    <a class="logo ff-jua " href="/">
+    <a class="logo ff-jua " href="./index.php">
         <span class="text-dark"> The African Cuisine </span> 
         <span class="text-secondary">(IBILE)</span>
     </a>
@@ -10,23 +10,30 @@
             <!-- <li><a class="link" id="about" href="./">Blog</a></li> -->
             <li><a class="link" id="program" href="about.php">About</a></li>
             <li><a class="link" id="join" href="contact-us.php">Contact Us</a></li>
+            <?php 
+            if (isset($_SESSION['loggedIn']))  {
+                echo '<li><a class="link" id="join" href="dashboard.php">Dashboard</a></li>';
+            }
+            ?>
         </ul>
         <div class="flex gap">
         <?php 
-          
-            if ($_SESSION['userType'] == 'cook' ) {
-                echo '<button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
-            }; 
+            if (isset($_SESSION['userType'])) {
+                if ($_SESSION['userType'] == 'cook' || $_SESSION['userType'] == 'admin') {
+                    echo '<button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
+                }; 
+            }
+         
             if (isset($_SESSION['loggedIn']))  {
-                echo ' <a href="/server/auth/logout.php"> <button class="btn" type="button"> Log Out <button> </a> ';
+                echo ' <a href="./server/auth/logout.php"> <button class="btn" type="button"> Log Out <button> </a> ';
             } else {
-                echo ' <a href="/auth.php"><button class="btn" type="button"> Sign up / Login  </button> </a>' ;
+                echo ' <a href="./auth.php"><button class="btn" type="button"> Sign up / Login  </button> </a>' ;
             };
         ?>
          </div>
     </div>
 </nav>
-<div class="modalBox">
+<!-- <div class="modalBox">
         <form class="add-recipe-form">
             <div class="name">
                 <label> Food Name</label>
@@ -80,4 +87,4 @@
             <textarea id="instructions"> </textarea>
             <button type="button" id="add-recipe" class="btn mg-2"> Submit </button>
         </form>
-</div>
+</div> -->

@@ -14,9 +14,10 @@ CREATE TABLE IF NOT EXISTS `recipes` (
     `description` TEXT,
     `location` ENUM ('east', 'west', 'south', 'north') NOT NULL,
     `category`    ENUM('soups', 'morsel', 'meats', 'grain') NOT NULL,
-    `ingridients` JSON,
+    `ingredients` JSON,
     `instructions` JSON,
-    `nutrients` JSON
+    `nutrients` JSON,
+    `image` TEXT
 );
 
 INSERT INTO `users` (`firstname`, `lastname`, `email`, `user-type`, `password`) VALUES 
@@ -26,7 +27,20 @@ ALTER TABLE `recipes`  ADD CONSTRAINT `recipes_user__fk` FOREIGN KEY (`id`) REFE
 
 ALTER TABLE `recipes` MODIFY COLUMN `location` ENUM ('east', 'west', 'south', 'north') NOT NULL;
 
-ALTER TABLE `recipes` CHANGE COLUMN `categories` `category`  ENUM('soups', 'morsel', 'meats', 'grain') NOT NULL;
+-- ALTER TABLE `recipes` CHANGE COLUMN `categories` `category`  ENUM('soups', 'morsel', 'meats', 'grain') NOT NULL;
 
-INSERT INTO `recipes` (`id` , `name`, `description`, `location`, `categories`, `ingridients`,  `instructions`)
-VALUES (2, 'Egusi soup', 'made with ground melon seeds', 'west', 'soups', '["Flour", "Sugar"]','["Mix Dry ingredients", "Add wet ingridients"]');
+INSERT INTO `recipes` (`id` , `name`, `description`, `location`, `category`, `ingredients`,  `instructions`, `image`)
+VALUES (2, 'Jollof Rice', 'Made with love', 'west', 'morsel', '["Flour", "Sugar"]','["Mix Dry ingredients", "Add wet ingridients"]', 'https://picsum.photos/id/4/200/300');
+
+
+INSERT INTO `recipes` (`id` , `name`, `description`, `location`, `category`, `ingredients`,  `instructions`, `image`)
+VALUES (2, 'Amala', 'Made with love', 'east', 'meats', '["Flour", "Sugar"]','["Mix Dry ingredients", "Add wet ingridients"]', 'https://picsum.photos/id/4/200/300');
+
+
+INSERT INTO `recipes` (`id` , `name`, `description`, `location`, `category`, `ingredients`,  `instructions`, `image`)
+VALUES (2, 'Eba', 'Made with love', 'north', 'grain', '["Flour", "Sugar"]','["Mix Dry ingredients", "Add wet ingridients"]', 'https://picsum.photos/id/4/200/300');
+
+
+INSERT INTO `recipes` (`id` , `name`, `description`, `location`, `category`, `ingredients`,  `instructions`, `image`)
+VALUES (2, 'East food', 'Made with love', 'south', 'morsel', '["Flour", "Sugar"]','["Mix Dry ingredients", "Add wet ingridients"]', 'https://picsum.photos/id/4/200/300');
+

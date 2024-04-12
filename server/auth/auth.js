@@ -7,7 +7,7 @@ $(document).ready(function() {
             alert('Please check your inputs');
         } else {
             $.ajax({
-                url: '/server/auth/auth.php',
+                url: './server/auth/auth.php',
                 method: 'POST',
                 data: {
                     login: 1,
@@ -25,7 +25,6 @@ $(document).ready(function() {
             })
         }
     })
-
     $("#signup").on('click', function() {
         var firstname = $("#firstname").val();
         var lastname = $("#lastname").val();
@@ -41,7 +40,7 @@ $(document).ready(function() {
                 alert ("Password Do not match")
             } else {
                 $.ajax({
-                    url: '/server/auth/auth.php',
+                    url: './server/auth/auth.php',
                     method: 'POST',
                     data: {
                         signup: 1,
@@ -54,7 +53,7 @@ $(document).ready(function() {
                     },
                     success: function(response) {
                         if (response == 'success') {
-                            window.location.href = '/auth.php';
+                            window.location.href = './auth.php';
                         } else {
                             alert(response)
                         }

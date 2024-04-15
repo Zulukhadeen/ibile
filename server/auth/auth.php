@@ -19,6 +19,7 @@
                 $_SESSION['email'] = $email;
                 $res = $connection->query(query: "SELECT `user-type` from `users` WHERE email='$email'");
                 $user_type = $res->fetch_assoc()['user-type'];
+                $res = $connection->query(query: "SELECT `id` from `users` WHERE email='$email'");
                 $id = $res->fetch_assoc()['id'];
                 $_SESSION['userType'] = $user_type;
                 $_SESSION['id'] = $id;

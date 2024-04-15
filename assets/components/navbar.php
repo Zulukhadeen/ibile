@@ -20,7 +20,7 @@
         <?php 
             if (isset($_SESSION['userType'])) {
                 if ($_SESSION['userType'] == 'cook' || $_SESSION['userType'] == 'admin') {
-                    echo '<button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button>';
+                    echo '<a href="./add-new.php"><button class="btn btn-add flex gap"> <img class="btn-icon" src="./assets/imgs/add-icon.png" />  Add New </button> </a>';
                 }; 
             }
          

@@ -46,6 +46,7 @@
                 <button class="btn" type="button" onclick="window.location.href='./recipe-detail.php'"> View </button>
             </div> -->
         </div>
+        <a href="./recipes.php"> <button> View ALL  </button> </a>
     </main>
     <?php 
         include('./assets/components/footer.php');

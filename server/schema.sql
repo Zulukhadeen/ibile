@@ -14,18 +14,14 @@ CREATE TABLE IF NOT EXISTS `recipes` (
     `description` TEXT,
     `location` ENUM ('east', 'west', 'south', 'north') NOT NULL,
     `category`    ENUM('soups', 'morsel', 'meats', 'grain') NOT NULL,
-    `ingredients` JSON,
-    `instructions` JSON,
-    `nutrients` JSON,
+    `ingredients` TEXT,
+    `instructions` TEXT,
     `image` TEXT
 );
 ALTER TABLE `recipes`  ADD CONSTRAINT `recipes_user__fk` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 INSERT INTO `users` (`firstname`, `lastname`, `email`, `user-type`, `password`) VALUES 
 ('testuser', 'testuser', 'test@gmail.com', 'foodie', 'password');
  
-
-
-
 
 -- ALTER TABLE `recipes` CHANGE COLUMN `categories` `category`  ENUM('soups', 'morsel', 'meats', 'grain') NOT NULL;
 

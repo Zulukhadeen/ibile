@@ -14,8 +14,9 @@ function addRecipe () {
             contentType: false,
             processData: false,
             success: function(response) {
-                if (response.success) {
+                if (response == 'success') {
                     alert ("Recipe Added Successfully");
+                    window.location.href = '/ibile/recipes.php';
                 } else {
                     alert (response);
                 }

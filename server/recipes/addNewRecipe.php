@@ -31,8 +31,9 @@
                      id, name, description, location, category, ingredients, instructions, image
                 ) VALUES ('2', '$name', '$description', '$location', '$category', '$ingredients', '$instructions', '$new_file_name')");
                 if ($res) {
-                    $response = array('success' => true, 'message' => 'Successcully created recipe');
-                    echo json_encode($response);
+                    // $response = array('success' => true, 'message' => 'Successcully created recipe');
+                    // echo json_encode($response);
+                    exit('success');
                 } else {
                     $response = array('success' => false, 'message' => 'Error saving time');
                     echo json_encode($response);

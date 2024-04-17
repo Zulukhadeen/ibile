@@ -16,7 +16,6 @@ $(document).ready(function() {
                 },
                 success: function(response) {
                     if (response == 'success') {
-                        console.log('I got here');
                         window.location.href = '/ibile/dashboard.php';
                     }else {
                         alert(response)

@@ -42,6 +42,7 @@ function searchRecipeOnPage () {
                 $.each(response, function(key, value){
                     $('#recipe-container').append(`
                     <div class="recipe" > 
+                        <div> I got her e </diV>
                         <img src="./server/image-upload/${value['image'] ? value['image'] : "./assets/imgs/no-image.png"}" class="recipe-img"/>
                         <span class="recipe-cat"> ${value['category']} </span>
                         <h3 class="recipe-name"> ${value['name']} </h3>

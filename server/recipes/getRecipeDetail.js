@@ -15,11 +15,15 @@ function getRecipeDetail() {
         url: `./server/recipes/getRecipeDetail.php?recipe_id=${recipe_id}`,
         success: function (response) {
             response = JSON.parse(response)
+            console.log(response)
             $("#recipe-info").append(`
                 <h2> ${response.name} </h2>
                 <span class="recipe-cat"> ${response.category} </span>
                 <p> ${response.description} </p>
             `);
+            $('#recipe-detail-image').html = `
+            <img src='./image-upload/${response.image}' />
+            `
 
 
         }

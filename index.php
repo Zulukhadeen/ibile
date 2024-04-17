@@ -34,7 +34,6 @@
             </div>
         </div>
     </header>
-
     <!-- Main Section -->
     <main class="container flow">
         <h1 class="main-title"> Popular Recipes </h1>

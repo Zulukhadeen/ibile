@@ -93,7 +93,7 @@
                                     type="radio"
                                     name="userType"
                                     value="admin" />
-                                <label> admin </label>
+                                <label> Admin </label>
                             </div>
                         </fieldset>
                         <div class="grid">
